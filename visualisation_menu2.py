@@ -9,12 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 import statsmodels.api as sm
 
-st.set_page_config(
-    page_title="Excel Data Visualization and Machine Learning",
-    layout="wide",
-    initial_sidebar_state="expanded",
-    page_icon=":bar_chart:",
-)
+
 
 st.title("Excel Data Visualization and Machine Learning")
 
@@ -232,6 +227,11 @@ if uploaded_file is not None:
             st.write("No columns selected for visualization.")
 
 if __name__ == "__main__":
-    st.set_page_config(page_title="Your App Name")
+    st.set_page_config(
+    page_title="Excel Data Visualization and Machine Learning",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    page_icon=":bar_chart:",
+)
     app.run()
                    
